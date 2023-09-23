@@ -1,0 +1,47 @@
+/* Arquivo da folha de estilos de todo o site */
+/* Inicio CSS estilo header */
+body, ul {
+    margin: 0px;
+    padding: 0px;
+
+}
+#menu a{
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 15px;
+
+}
+#menu a:hover{
+    background: rgba(0, 0, 0, 0.05);
+    font-size: 15px;
+}
+#logo{
+    font-size: 1.5rem;
+}
+#logo img{
+    height: 110px;
+}
+#logo img:hover{
+    box-shadow: 2px 2px 4px #cbcbcb;
+    transition: 0.3s;
+}
+#header{
+    box-sizing: border-box;
+    height: 70px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #e7e7e7;
+}
+#menu{
+
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+}
+#btn-mobile{
+    display: none;
+}
+/* Fim CSS estilo header */
