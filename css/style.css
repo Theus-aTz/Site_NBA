@@ -210,3 +210,41 @@ box-shadow: 3px 3px 6px  #b1b1b1
     width: 25%;
 }
 /* Fim Estilo Novidades */
+/* Inicio Estilo Galeria */
+.galeria {
+    margin: 60px auto 20px;
+    /* Quando tivermos 4 valores no margin = top/ right/ bottom / left>                 Exemplo: margin: 60px 60px 60px 60px; */
+    /* Quando tivermos 3 valores será = top / right and left / bottom>                  exemplo; margin: 60px auto 60px; */
+    /* Quando tivermos 2 valores será = top and botton / right and left>                exemplo: margin: 60px 30px; */
+    /* Quando tivermos 1 valor será = top, botton, right and left serão identicos>      exemplo: margin: 60px; */
+    /* Essa regra também se aplica ao padding */
+}
+.galeria .container {
+    margin-left: 11%;
+}
+.galeria h2 {
+    text-align: center;
+    font-size: 24px;
+}
+.galeria .p {
+    text-align: center;
+    width: 50%;
+    margin: 14px auto 50px;
+}
+.galeria .gallery {
+    width: 30%;
+    margin: 14px auto 50px;
+}
+.galeria .gallery img {
+width: 80%;
+height: 80%;
+-webkit-transition: -webkit-transform .5s ease;
+transition: transform .5s ease;
+display: block;
+}
+.galeria .gallery img:hover {
+    -webkit-transform: scale(1.9);
+    transform: scale(1.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/* Fim Estilo Galeria */ 
