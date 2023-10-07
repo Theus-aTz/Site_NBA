@@ -72,7 +72,7 @@ body, ul {
 /*  Inicio estilo Banner Home */
 .section-banner-home{
 width: 100%;
-height: 500px;
+height: 600px;
 margin-top: 10px;
 padding: 50px;
 background-color: #006ccb;
@@ -80,7 +80,7 @@ box-shadow: 3px 3px 6px  #b1b1b1
 }
 
 .section-banner-home img {
-    max-height: 400px;
+    height: 80%;
     width: 70%;
     display: block;
     margin: auto;
@@ -91,15 +91,16 @@ box-shadow: 3px 3px 6px  #b1b1b1
 }
 .section-banner-home .texto-banner h1{
     font-size: 30px;
-    width: 60%;
-    font-weight: 500;
-    padding-bottom: 20px;
+    width: 60%; /* Width = largura*/
+    font-weight: 500; /* Espessura do texto*/
+    padding-bottom: 20px; /* Margem interna em baixo */
     color: white;
 }
 .section-banner-home .texto-banner p{
     font-size: 15px;
     margin-bottom: 20px;
     color: white;
+    text-align: justify;
 }
 .section-banner-home .texto-banner a{
     color: rgb(255, 255, 255);
@@ -112,11 +113,100 @@ box-shadow: 3px 3px 6px  #b1b1b1
 .section-banner-home .texto-banner a:hover{
     color: rgb(255,255,255);
     text-shadow: 2px 2px 4px #ffffff7a;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: bold; 
 }
 
 /* Fim estilo Banner Home */
 
 /* Inicio estilo Destaque */
-/* Fim estilo Destaque */
+.destaque h2 {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.destaque p {
+    width: 77%;
+    text-align: center;
+    font-size: 14px;
+    margin: 30px auto;
+}
+.destaque figcaption{
+    font-size: 13px;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+.destaque #saiba-mais {
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    color: #e7e7e7;
+    font-size: 18px;
+    font-weight: bold;
+    background: #006ccb;
+    margin: 30px 0px;
+    width: 25%;
+    
+   
+}
+
+.destaque #saiba-mais:hover {
+
+    font-size: 25px;
+    color: white;
+    background: #ed174b;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 30px 0px;
+    display: flex;
+    transition: 0.3s;
+}
+.destaque .col-6 img:hover {
+    box-shadow: 3px 3px 6px #cbcbcb;
+    transition: 0.3s;
+}
+/* Fim estilo Destaque */ 
+
+/* Inicio Estilo Novidades */
+ 
+
+.novidades .text-body {
+    width: 80%;
+    margin: 70px auto;
+}
+
+.novidades h2 {
+    color: #000;
+    font-size: 26px;
+    width: 70%;
+}
+.novidades p {
+    color: rgb(0, 0, 0);
+}
+.novidades a {
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    color: #e7e7e7;
+    font-size: 18px;
+    font-weight: bold;
+    background: #006ccb;
+    margin: 30px 0px;
+    width: 25%;
+}
+.novidades a:hover {
+   
+    font-size: 23px;
+    color: white;
+    background: #ed174b;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 30px 0px;
+    display: flex;
+    transition: 0.3s;
+    width: 25%;
+}
+/* Fim Estilo Novidades */
