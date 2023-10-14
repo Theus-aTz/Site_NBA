@@ -37,7 +37,7 @@ body, ul {
     align-items: center;
     justify-content: space-between;
     background: #e7e7e7;
-    box-shadow: 3px 3px 6px  #b1b1b1
+    box-shadow: 3px 3px 6px  #b1b1b1;
     
 }
 #menu{
@@ -58,12 +58,84 @@ body, ul {
     position: relative;
     z-index: 10;
     padding-top: 10px;
-    box-shadow: 3px 3px 6px  #b1b1b1
+    box-shadow: 3px 3px 6px  #b1b1b1;
 }
 
 
 
 /*  Fim Estilo carousel */
+
+/* Inicio estilo media  mobile */
+@media (max-width: 600px) {
+    #menu{
+        display: block;
+        position: absolute;
+        width: 15em;
+        top: 70;
+        right: 0px ;
+        background: #e7e7e7;
+        transition: 0.6s;
+        z-index: 1000;
+        height: 0px;
+        padding-left: 5px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #menu li {
+        padding-top: 30px;
+        padding-bottom: 0px;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    }
+    #nav.active #menu {
+        height: calc(100vh - 70px);
+        visibility: visible;
+        overflow-y: hidden;
+    }
+    #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+    }
+    #hamburger {
+        border-top: 3px solid;
+        /* Para aumentar ou diminuir a espessura da linha do hamburguer  */
+        width: 35px;
+        /* Para alterar a largura do hamburger */
+        color: #003f91;
+        /* Para alterar a cor do hamburger */
+
+    }
+    #hamburger::after,
+    #hamburger::before {
+        content: '';
+        display: block;
+        width: 35px;
+        /* Altera a largura do hamburger, juntamente com o width anterior */
+        height: 2px;
+        background-color: currentColor;
+        margin-top: 5px;
+        /* Altera o espaçamento entre as linhas do hamburger */
+        position: relative;
+        border-top: 3px solid;
+        /* Para aumentar ou diminuir a espessura da linha do Hamburger, juntamente com o border-top anterior */
+    }
+    #nav.active #hamburger {
+        border-top-color: transparent ;
+    }
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+/* Fim estilo media  mobile */
 
 
 /* Para aplicar estilos na CLASS utilize o [ . ] antes do objeto */
@@ -247,4 +319,129 @@ display: block;
     transform: scale(1.9);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-/* Fim Estilo Galeria */ 
+/* Fim Estilo Galeria */
+
+/* Inicio Whatsapp */
+.whatsapp {
+    position: fixed;
+    top: 400px;
+    right: 20px;
+    z-index: 200;
+}
+
+
+
+
+/* Inicio efeito pulse */
+.whatsapp .pulse {
+    animation: pulse 0.7s infinite;
+    margin: 0 auto;
+    display: table;
+    margin-top: 50px;
+    animation-direction: alternate;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+}
+@-webkit-keyframes pulse {
+    0%{
+    -webkit-transform: scale(1);
+    -webkit-filter: brightness(110%);
+}
+    100%{
+        -webkit-transform: scale(1.1);
+        -webkit-filter: brightness(110%);
+    }
+
+}
+@keyframes pulse {
+    0%{
+        transform: scale(1);
+        filter: brightness(100%);
+    }
+    100%{
+        transform: scale(1.1);
+        filter: brightness(110%);
+    }
+}
+
+
+/* Fim efeito pulse */
+
+/* fim Whatsapp */
+
+/* Inicio Instagram */
+.instagram {
+    position: fixed;
+    top: 400px;
+    left: 20px;
+    z-index: 200;
+}
+.instagram .pulse{
+
+    animation: pulse 0.7s infinite;
+    margin: 0 auto;
+    display: table;
+    margin-top: 50px;
+    animation-direction: alternate;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+}
+
+
+/* fim Instagram */
+/* Incio Estilo footer */
+.rodape {
+    padding: 50px 50px 0px;
+    
+}
+.rodape .container #logo-rodape img {
+    height: 50%;
+    width: 50%;
+    padding-left: 10px;
+    transition: transform .3s;
+    display: block;
+    
+}
+.rodape .container #logo-rodape img:hover {
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+.rodape .info-contato p {
+    margin: 0;
+    
+}
+.rodape .linkfooter {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+    margin-left: 0.7rem;
+    
+}
+.rodape .linkfooter:hover {
+    font-weight: bold;
+}
+.rodape .redes-sociais {
+    display: inline-block;
+}
+.rodape .redes-sociais img {
+    width: 50px;
+    height: 50px;
+    padding-left: 0;
+    margin-left: 0.8rem;
+    transition: transform .3s;
+    border-radius: 15px;
+    /* Border-radius== Arredondando as extremidades da forma */
+}
+.rodape .redes-sociais img:hover {
+    z-index: 1;
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.466);
+}
+.rodape p.direitos {
+    text-align: center;
+    margin-top: 40px;
+}
+/* Fim Estilo footer */
+
+
+
