@@ -73,7 +73,7 @@ body, ul {
 /*  Fim Estilo carousel */
 
 /* Inicio estilo media  mobile */
-@media (max-width: 600px) {
+@media (max-width: 690px) {
     #menu{
         display: block;
         position: absolute;
@@ -163,6 +163,7 @@ box-shadow: 3px 3px 6px  #b1b1b1
     width: 100%;
     display: block;
     margin: auto;
+    padding-top: 5%;
 }
 .section-banner-home .texto-banner{
     margin-top: 30px;
@@ -501,3 +502,61 @@ display: block;
     margin-top: 30px;
 }
 /* Fim Estilo Videos */
+
+/* Inicio estilo contato */
+.contact {
+    padding: 70px 0;
+    background: #fb5c73;
+}
+.section-title h2 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    border-bottom: 5px solid #ffffff;
+    padding-bottom: 10px;
+    display: inline-block;
+    
+}
+.section-title p {
+    color: #e8e8e8;
+    margin-bottom: 30px;
+
+}
+.contact input,
+.contact textarea {
+    background: #fafafa;
+}
+.contact textarea {
+    min-height: 200px;
+    max-width: 100%;
+
+}
+.contact .map {
+    overflow: hidden;
+    border-radius: 4px;
+    height: 70%;
+}
+
+/* Fim estilo contato */
+
+/* Inicio estilo marketing place */
+.market-place{
+    height: 180px;
+    width: 100%;
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.market-place img {
+    height: 160px;
+    width: 100%;
+    
+}
+
+/* fim estilo marketing place */
